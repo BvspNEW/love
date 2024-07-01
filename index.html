@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By Bvsp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cat sound -->
+    <audio id="catSound" src="cat_sound.mp3"></audio>
+    <img src="cat1.jpg" id="catImage" alt="Gemess Cat" style="display: none;">
+
+    <div class="menu">
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu-content" id="menu-content">
+            <a href="#" onclick="changeBackground('linear-gradient(135deg, #ffcccc, #ffccff, #ccccff, #ccffff, #ccffcc)')">Gradient Background</a>
+            <a href="#" onclick="changeBackground('linear-gradient(to right, #ff7e5f, #feb47b)')">Sunset Background</a>
+            <a href="#" onclick="changeBackground('linear-gradient(to right, #76b852, #8dc26f)')">Green Background</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="heart" onclick="playCatSound()">🐈</div>
+        <div class="message">Buat Kamu</div>
+        <div class="animation" onclick="startAnimation()">Coba Di klik</div>
+    </div>
+    <div class="social-icons">
+        <a href="#" onclick="openSocial('https://instagram.com')"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+        <a href="#" onclick="openSocial('https://tiktok.com')"><img src="tiktok.png" alt="TikTok"></a>
+        <a href="#" onclick="openSocial('https://telegram.org')"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram"></a>
+        <a href="#" onclick="openSocial('https://youtube.com')"><img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"></a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
